@@ -13,13 +13,13 @@ namespace BasicLogicPrograms
         public void VowelOrConsonant()
         {
             Console.WriteLine("Enter any character: ");
-            ch = Convert.ToChar(Console.ReadLine());
+           char ch = Convert.ToChar(Console.ReadLine());
             // Condition for vowel checking
-            if (ch == 'a' || ch == 'e' || ch == 'i' || ch == 'o' || ch == 'u' || ch == 'A' || ch == 'E' || ch == 'I' || ch == 'O' || ch == 'U')
+            if (ch == 'a' || ch == 'e' || ch == 'i' || ch == 'o' || ch == 'u' )
             {
                 Console.WriteLine(ch + " is Vowel.");
             }
-            else if ((ch >= 'a' && ch <= 'z') || (ch >= 'A' && ch <= 'Z'))
+            else
             {
                 Console.WriteLine(ch + " is Consonant.");
             }
